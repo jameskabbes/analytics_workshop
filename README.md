@@ -8,13 +8,13 @@
   />
 </p>
 
-Welcome to John Deere's Python programming, analytics, and machine learning workshop!
+Welcome to John Deere's analytics workshop!
 
 # Overview
 
 Answer the questions below using the provided code, data, and any online resources, including **AI tools**. Each team is permitted two hints from John Deere employees.
 
-_Note_: The files generated are purposefully large to prevent LLMs from easily giving you the answers without needing to run any code.
+_Note: The files generated are purposefully large to prevent LLMs from easily giving you the answers without needing to run any code._
 
 # Scoring
 
@@ -72,7 +72,7 @@ _Note: due to the size of this file (and to preserve anonymity), this data is ge
 
 This file contains the `income` amount corresponding to `id` values in the `features.csv` file. 4.5 million rows.
 
-**`target_unknown`: hidden file**
+**`target_unknown.csv`: hidden file**
 
 This file (hidden until after the workshop) contains the income levels for the remaining 500,000 people.
 
@@ -84,7 +84,7 @@ Answer the following questions related to the given datasets.
 
 For questions that relate to `income`, only consider the rows with known income (first 4.5 million of `features.csv`) for your answer.
 
-1. How many individuals live in the state of Texas?
+1. How many individuals live in the state of TX?
 
 2. How many currently married teachers in the state of IL are less than 20 years old?
 
@@ -92,14 +92,18 @@ For questions that relate to `income`, only consider the rows with known income 
 
 4. Find the absolute difference of a) the proportion of people in their 20s who are married / have been married and b) the proportion of people in their 30s who are married / have been married. Round you answer to 2 decimal places and multiply by 100. (e.g. if absolute proportional difference is 0.124203, return `12`)
 
-5. Explore the distrubtion of income by occupation. Does it appear that occupation plays a significant role in income? Enter 2 for yes, 1 for no.
+5. Explore the relationship between income and occupation. Does it appear that occupation plays a significant role in income? Enter 2 for yes, 1 for no.
 
-6. Plot the distrubtion of income by age. Does it appear that age plays a significant role in income? Enter 2 for yes, 1 for no.
+6. Explore the relationship between income and age. Does it appear that age plays a significant role in income? Enter 2 for yes, 1 for no.
 
-7. Find the absolute difference between the median income and the mean income
+7. Find the absolute difference between the median income and the mean income.
 
-8. Predict the incomes for the remaining 500,000 individuals. What is the predicted income for the individual with `id = 4795132`? _Answers within 20% of the actual value will be given credit_
+8. Predict the incomes for the remaining 500,000 individuals. What is the income of the individual with `id = 4795132`? _Answers within 20% of the actual value will be given credit_
 
-9. Predict the incomes for the remaining 500,000 individuals. What is the predicted income for the individual with `id = 4625316`? _Answers within 20% of the actual value will be given credit_
+9. Predict the incomes for the remaining 500,000 individuals. What is the income of the individual with `id = 4625316`? _Answers within 20% of the actual value will be given credit_
 
-10. Predict the incomes for the remaining 500,000 individuals. What is the predicted income for the individual with `id = 4956125`? _Answers within 20% of the actual value will be given credit_
+10. Predict the incomes for the remaining 500,000 individuals. What is the income of the individual with `id = 4956125`? _Answers within 20% of the actual value will be given credit_
+
+# More
+
+Interested in a real problem with live data? Check out [Boston House Prices](https://www.kaggle.com/datasets/vikrishnan/boston-house-prices).
