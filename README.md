@@ -37,11 +37,26 @@ Install all libraries found in `requirements.txt`
 
 **Generate features.csv**
 
-Run the script `generate_features.py`. A succesful output should have a new file of approximately 600MB stored at `data/features.csv`.
+Run the script `generate_features.py`. A succesful output should have a new file of approximately 277MB stored at `data/features.csv`.
+
+_Note: by using a constant random seed, we can ensure that all files are generated in the same manner. Verify that the first 10 lines of your file match the following table._
+
+| id  | age | education   | occupation | state | marital_status | home_owner | pet_owner | travel_frequency |
+| --- | --- | ----------- | ---------- | ----- | -------------- | ---------- | --------- | ---------------- |
+| 1   | 69  | High School | Teacher    | OK    | Married        | True       | False     | Rarely           |
+| 2   | 32  | Bachelors   | Engineer   | VA    | Single         | False      | False     | Often            |
+| 3   | 89  | Masters     | Artist     | MI    | Married        | True       | False     | Often            |
+| 4   | 78  | Bachelors   | Musician   | IA    | Married        | True       | False     | Never            |
+| 5   | 38  | Bachelors   | Engineer   | NY    | Divorced       | False      | False     | Often            |
+| 6   | 92  | Masters     | Engineer   | VA    | Married        | True       | True      | Never            |
+| 7   | 92  | Bachelors   | Engineer   | IN    | Married        | False      | True      | Often            |
+| 8   | 41  | Bachelors   | Nurse      | OK    | Single         | True       | True      | Rarely           |
+| 9   | 20  | Bachelors   | Teacher    | PA    | Single         | False      | True      | Never            |
+| 10  | 39  | High School | Engineer   | FL    | Single         | True       | False     | Rarely           |
 
 **Check out notebook.ipynb**
 
-Run through `notebook.ipynb` to get started.
+Run through `notebook.ipynb` to get started. You will need to perform exploratory data analysis to be able to answer the questions.
 
 # The Data
 
@@ -63,6 +78,28 @@ This file (hidden until after the workshop) contains the income levels for the r
 
 # Questions
 
+Answer the following questions related to the given datasets.
+
 **All answers to be rounded to nearest integer**
 
 For questions that relate to `income`, only consider the rows with known income (first 4.5 million of `features.csv`) for your answer.
+
+1. How many individuals live in the state of Texas?
+
+2. How many currently married teachers in the state of IL are less than 20 years old?
+
+3. What is the absolute value of the average difference between an engineer's income and a lawyer's income in the state of TX?
+
+4. Find the absolute difference of a) the proportion of people in their 20s who are married / have been married and b) the proportion of people in their 30s who are married / have been married. Round you answer to 2 decimal places and multiply by 100. (e.g. if absolute proportional difference is 0.124203, return `12`)
+
+5. Explore the distrubtion of income by occupation. Does it appear that occupation plays a significant role in income? Enter 2 for yes, 1 for no.
+
+6. Plot the distrubtion of income by age. Does it appear that age plays a significant role in income? Enter 2 for yes, 1 for no.
+
+7. Find the absolute difference between the median income and the mean income
+
+8. Predict the incomes for the remaining 500,000 individuals. What is the predicted income for the individual with `id = 4795132`? _Answers within 20% of the actual value will be given credit_
+
+9. Predict the incomes for the remaining 500,000 individuals. What is the predicted income for the individual with `id = 4625316`? _Answers within 20% of the actual value will be given credit_
+
+10. Predict the incomes for the remaining 500,000 individuals. What is the predicted income for the individual with `id = 4956125`? _Answers within 20% of the actual value will be given credit_
