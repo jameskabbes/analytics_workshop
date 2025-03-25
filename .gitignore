@@ -1,4 +1,5 @@
 __pycache__/
+graphic_design/
 
 generate_target.py
 data/target_unknown.csv
@@ -6,3 +7,4 @@ data/features.csv
 data/submission_pins.csv
 
 solutions.ipynb
+grader.ipynb
